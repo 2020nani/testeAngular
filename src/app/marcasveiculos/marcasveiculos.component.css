@@ -1,0 +1,51 @@
+.Container{
+    width: 96vw;
+    background-color: #F7F8FB;
+}
+h1{
+    margin-left: 2vw;
+}
+table{
+    width: 92vw;
+    margin-left: 2vw;
+    padding-left: 2vw;
+}
+thead{
+    color: #4E73DF;
+    background-color: #F8F9FC;
+  
+}
+tbody{
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px #E3E6F0;
+    border-top: solid 1px #E3E6F0;
+   
+}
+
+tr{
+    width: 80vw;
+    display: flex;;
+    align-items: center;
+    
+}
+td{
+    
+    border-bottom: solid 1px #E3E6F0;
+    border-top: solid 1px #E3E6F0;
+    display: flex;
+    flex-direction: row;
+   
+}
+button{
+    color: #4E73DF;
+    border: none;
+    background-color:#FFFFFF;
+    margin-left: 40vw;
+}
+button:hover{
+    color:  #1CC88A;
+}
+p{
+    width: 10vw;
+}

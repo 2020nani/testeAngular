@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Veiculos</h1>
+    <table>
+        
+        <thead>
+            <p>Marcas</p>
+        </thead>
+        <tbody>
+            <p>Marca</p> 
+            <tr *ngFor="let marcas of _marcas">
+                  
+            <td><p>{{ marcas.nome }}</p>
+                <button (click)="modelos(marcas.codigo)">ver modelos</button></td>
+        </tr>
+            
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <p>Modelos</p>
+        </thead>
+        <tbody>
+            <tr *ngFor="let modelo of _modelos.modelos">
+                
+            <td><p>{{ modelo.nome }}</p>
+                <button (click)="modelos(marcas.codigo)">ver modelos</button></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
