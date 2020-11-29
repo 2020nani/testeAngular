@@ -13,6 +13,9 @@
     margin-top: 2vh;
     margin-left: 0.5vw;
 }
+.cardcontainer{
+    padding-bottom: 2vh;
+}
 .cardcontainermodelo{
     margin-top: 3vh;
     margin-bottom: 3vh;
