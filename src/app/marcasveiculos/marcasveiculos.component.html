@@ -1,30 +1,72 @@
 <div class="container">
     <h1>Veiculos</h1>
-    <table>
-        
-        <thead>
-            <p>Marcas</p>
-        </thead>
-        <tbody>
-            <p>Marca</p> 
-            <tr *ngFor="let marcas of _marcas">
-                  
-            <td><p>{{ marcas.nome }}</p>
-                <button (click)="modelos(marcas.codigo)">ver modelos</button></td>
-        </tr>
-            
-        </tbody>
-    </table>
-    <table>
-        <thead>
-            <p>Modelos</p>
-        </thead>
-        <tbody>
-            <tr *ngFor="let modelo of _modelos.modelos">
-                
-            <td><p>{{ modelo.nome }}</p>
-                <button (click)="modelos(marcas.codigo)">ver modelos</button></td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="cardcontainer" *ngIf="viewModelos === false">
+        <div class="headcard">
+            <span>Marcas</span>
+        </div>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <p>Marca</p>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let marcas of _marcas">
+
+                        <td>
+                            <p>{{ marcas.nome }}</p>
+                            <button (click)="modelos(marcas.codigo)">ver modelos</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="cardcontainer" *ngIf="viewModelos === true">
+        <div class="headcard">
+            <span>Marcas</span>
+        </div>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <p>Marca</p>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let marcas of _marcas">
+
+                        <td>
+                            <p>{{ marcas.nome }}</p>
+                            <button (click)="modelos(marcas.codigo)">escolher marca</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="cardcontainer" *ngIf="viewModelos === true">
+        <div class="headcard">
+            <span>Modelos</span>
+        </div>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <p>Modelo</p>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let modelo of _modelos.modelos">
+
+                        <td>
+                            <p>{{ modelo.nome }}</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

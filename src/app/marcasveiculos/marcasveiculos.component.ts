@@ -29,11 +29,12 @@ export class MarcasVeiculosComponent implements OnInit {
         })
     }
     modelos( id: number): void { 
-        {this.viewModelos === false ? this.viewModelos = true : this.viewModelos = false}
+        
         this.veiculoid = id;
         this.marcaService.modelos(this.veiculoid).subscribe({
             next: modelos => {
                 this._modelos = modelos;
+                {this.viewModelos == false ? this.viewModelos = true : this.viewModelos = false} ;
               console.log(modelos, this.viewModelos)  
             },
             error: err => console.log('Error', err) 

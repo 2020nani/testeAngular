@@ -1,25 +1,59 @@
 .Container{
-    width: 96vw;
+    width: 98vw;
     background-color: #F7F8FB;
+}
+.headcard{
+    width: 94vw;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: #F8F9FC;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 0 5px 5px  rgba(58, 59, 69, .15);
+    
+}
+.headcard{
+    width: 94vw;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: #F8F9FC;
+    margin-left: 2vw;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 0 5px 5px  rgba(58, 59, 69, .15);
+    
+}
+.card{
+    box-shadow: 5px 5px 5px 5px rgba(58, 59, 69, .15);
+    padding-top: 4vh;
+    width: 94vw;
+    margin-left: 2vw;
+
+}
+
+span{
+    margin-left:1vw ;
+    color: blue;
 }
 h1{
     margin-left: 2vw;
+    color: #5A5C69;
 }
 table{
-    width: 92vw;
-    margin-left: 2vw;
+    width: 94vw;
     padding-left: 2vw;
+    
 }
-thead{
-    color: #4E73DF;
-    background-color: #F8F9FC;
-  
-}
+
+
 tbody{
     display: flex;
     flex-direction: column;
-    border-bottom: solid 1px #E3E6F0;
-    border-top: solid 1px #E3E6F0;
+    
+    
+    
    
 }
 
@@ -27,14 +61,16 @@ tr{
     width: 80vw;
     display: flex;;
     align-items: center;
+    border-top: solid 1px #E3E6F0;
+   
     
 }
 td{
     
-    border-bottom: solid 1px #E3E6F0;
     border-top: solid 1px #E3E6F0;
     display: flex;
     flex-direction: row;
+    
    
 }
 button{
@@ -45,7 +81,10 @@ button{
 }
 button:hover{
     color:  #1CC88A;
+    border: none;
 }
 p{
     width: 10vw;
+    color: #5A5C69;
+    margin-top: 2vh;
 }
