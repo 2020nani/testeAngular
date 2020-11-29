@@ -1,3 +1,18 @@
+/*
+    Dados da pagina
+   * Nome : Navita
+   * Objetivo: Buscar modelos de veiculos da marca escolhida
+   * Desenvolvedor: Hernani Almeida
+   * data criacao: 29/11/2020
+   
+*/
+
+/*
+   importa todos os modulos do material angular para ser utilizado na pagina
+   observacao: nesta pagina nao foi utilizado mas sempre importo todos nas paginas que trabalho caso use nao preciso me preocupar 
+   em qual vou importar 
+   
+*/
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
