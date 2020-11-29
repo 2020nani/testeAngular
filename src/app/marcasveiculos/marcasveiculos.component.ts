@@ -12,8 +12,9 @@ import { MarcasVeiculosService } from './marcasveiculos.service';
 export class MarcasVeiculosComponent implements OnInit {
     _marcas: Marcas[] = [];
     _modelos: Modelos[] = [];
+    marcaescolhida: string = "";
     veiculoid : number = 0;
-    viewModelos : boolean = false
+    viewModelos : boolean = false;
     constructor(private marcaService: MarcasVeiculosService) { }
 
     ngOnInit(): void { 
@@ -28,12 +29,13 @@ export class MarcasVeiculosComponent implements OnInit {
             error: err => console.log('Error', err) 
         })
     }
-    modelos( id: number): void { 
+    modelos( id: number, nome: string): void { 
         
         this.veiculoid = id;
         this.marcaService.modelos(this.veiculoid).subscribe({
             next: modelos => {
                 this._modelos = modelos;
+                this.marcaescolhida = nome;
                 {this.viewModelos == false ? this.viewModelos = true : this.viewModelos = false} ;
               console.log(modelos, this.viewModelos)  
             },

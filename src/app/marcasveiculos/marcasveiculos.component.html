@@ -16,7 +16,7 @@
 
                         <td>
                             <p>{{ marcas.nome }}</p>
-                            <button (click)="modelos(marcas.codigo)">ver modelos</button>
+                            <button (click)="modelos(marcas.codigo, marcas.nome)">ver modelos</button>
                         </td>
                     </tr>
                 </tbody>
@@ -35,11 +35,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let marcas of _marcas">
+                    <tr >
 
                         <td>
-                            <p>{{ marcas.nome }}</p>
-                            <button (click)="modelos(marcas.codigo)">escolher marca</button>
+                            <p>{{ marcaescolhida }}</p>
+                            <button (click)="viewModelos = false">escolher marca</button>
                         </td>
                     </tr>
                 </tbody>
