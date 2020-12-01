@@ -9,6 +9,7 @@
 
 import { Component, Input } from '@angular/core';
 import { VeiculosService } from '../core/veiculos.service';
+import { Modelos } from '../shared/models/modelosveiculos'
 
 /*
     
@@ -30,7 +31,7 @@ export class ModelosVeiculosComponent  {
     constantes utilizadas pelo componente  
     */
     @Input() viewmodelos: boolean = false;
-    _modelos: [] = [];
+    _modelos: Modelos[] = [];
     @Input() veiculoid: string = '';
   
     constructor(private veiculosService: VeiculosService) { }
