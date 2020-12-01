@@ -9,24 +9,27 @@ Desenvolvido por Hernani Amancio de Almeida
 
 Para executar o projeto, sera necessario instalar os seguintes programas em seu computador:
 
-.Nodejs 
-.angular
+-Nodejs 
+-angular
 
 ## Desenvolvimento
 
 Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diretorio de sua preferencia com os seguintes comandos:
 
-`cd "diretorio de sua preferencia"`
-`git clone https://github.com/2020nani/testeAngular.git`
-`cd testeAngular`
+
+-`cd "diretorio de sua preferencia"`
+-`git clone https://github.com/2020nani/testeAngular.git`
+-`cd testeAngular`
+
 
 Apos clonar o projeto em seu computador e necessario instalar as dependencias que o projeto utiliza com o seguinte comando:
 
-npm install
+
+- npm install
 
 Rode o programa em seu computador na porta 4200 com o seguinte comando
 
-`ng serve -o`
+- `ng serve -o`
 
 ## Rodar testes end-to-end com cypress
 
