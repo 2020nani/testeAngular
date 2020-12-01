@@ -18,7 +18,7 @@ Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diret
 
 
 - `cd "diretorio de sua preferencia"`
-- `git clone https://github.com/2020nani/testeAngular.git`
+- `git clone https://github.com/2020nani/teste.git`
 - `cd testeAngular`
 
 
