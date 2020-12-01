@@ -7,8 +7,8 @@
    
 */
 
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { Marcas, Modelos } from './marcasveiculos';
+import { Component, OnInit } from '@angular/core';
+import { Marcas } from './marcasveiculos';
 import { MarcasVeiculosService } from './marcasveiculos.service';
 
 /*
@@ -33,7 +33,7 @@ export class MarcasVeiculosComponent implements OnInit {
     _marcas: Marcas[] = [];
     _modelos: any = [];
      marcaescolhida: string = "";
-    veiculoid: string = '3';
+    veiculoid: string = '';
     viewModelos: boolean = false;
 
     /*

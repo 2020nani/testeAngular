@@ -7,7 +7,7 @@
    
 */
 
-import { Marcas, Modelos } from './marcasveiculos';
+import { Marcas } from './marcasveiculos';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';

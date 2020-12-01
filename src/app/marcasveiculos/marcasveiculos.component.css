@@ -89,8 +89,20 @@ button{
     border: none;
     background-color:transparent;
     margin-left: 40vw;
+    font-size: 1.2rem;
 }
 button:hover{
+    color:  #1CC88A;
+    border: none;
+}
+.modelo{
+    color: #4E73DF;
+    border: none;
+    background-color:transparent;
+    margin-left: 40vw;
+    font-size: 1.2rem;
+}
+.modelo:hover{
     color:  #1CC88A;
     border: none;
 }
@@ -98,5 +110,5 @@ p{
     width: 10vw;
     color: #5A5C69;
     margin-top: 2vh;
-    font-size: 1.2rem;
+    
 }

@@ -8,7 +8,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { MarcasVeiculosComponent } from './marcasveiculos/marcasveiculos.component';
 import { MaterialModule } from './shared/material/material.module';
 import { FooterComponent } from './shared/components/footer/footer.component';
-import { ModelosVeiculosComponent } from './modelosveiculos/modelosveiculos.component';
+import { Error404Component } from './shared/components/Error404/error404.component';
+
 
 
 
@@ -19,7 +20,8 @@ import { ModelosVeiculosComponent } from './modelosveiculos/modelosveiculos.comp
     HeaderComponent,
     FooterComponent,
     MarcasVeiculosComponent,
-    ModelosVeiculosComponent
+    Error404Component
+   
     
     
   ],

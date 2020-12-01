@@ -1,0 +1,31 @@
+.Container{
+    width: 100vw;
+    height: 80vh;
+    background-color: #F7F8FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+   
+}
+
+p{
+    margin-bottom: 3vh
+}
+
+.btn{
+    height: 10vh;
+    color: #4E73DF;
+    border: none;
+    background-color:rgb(49, 196, 159);
+    font-size: 1.5rem;
+
+}
+.btn:hover{
+    background-color:rgb(230, 230, 230);
+    color:  #1CC88A;
+    border: none;
+    
+}

@@ -8,13 +8,10 @@
 */
 
 /*
- exporta um modelo de objeto vazio de marcas e modelos 
+ exporta um modelo de objeto vazio de marcas  
 */
 
 export interface Marcas { 
     nome: string;
     codigo: string
-}
-export interface Modelos{
-   
 }
