@@ -7,10 +7,11 @@
    
 */
 
-import { HttpClient } from '@angular/common/http';
+import { Marcas, Modelos } from './marcasveiculos';
 import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { Marcas, Modelos } from './marcasveiculos';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
     providedIn: 'root'
@@ -34,7 +35,7 @@ export class MarcasVeiculosService {
     /*
      funcao que ao ser chamada retorna um array de modelos conforme o parametro id passado
     */
-    modelos(id: number): Observable<Modelos[]> {
-        return this.httpClient.get<Modelos[]>(`${this.marcasUrl}/${id}/modelos`)
+    modelos(id: string): Observable<any> {
+        return this.httpClient.get<any>(`${this.marcasUrl}/${id}/modelos`)
     }
 }

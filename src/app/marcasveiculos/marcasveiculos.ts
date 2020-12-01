@@ -11,9 +11,10 @@
  exporta um modelo de objeto vazio de marcas e modelos 
 */
 
-export class Marcas { 
-    
+export interface Marcas { 
+    nome: string;
+    codigo: string
 }
-export class Modelos{
-    
+export interface Modelos{
+   
 }

@@ -7,9 +7,8 @@
    
 */
 
-import { Component, Input, OnInit, Output } from '@angular/core';
-import { Marcas, Modelos } from './marcasveiculos';
-import { MarcasVeiculosService } from './marcasveiculos.service';
+import { Component, OnInit, Output } from '@angular/core';
+import { MarcasVeiculosService } from '../marcasveiculos/marcasveiculos.service';
 
 /*
     
@@ -21,61 +20,42 @@ import { MarcasVeiculosService } from './marcasveiculos.service';
 */
 
 @Component({
-    selector: 'app-marcasveiculos',
-    templateUrl: './marcasveiculos.component.html',
-    styleUrls: ['./marcasveiculos.component.css']
+    selector: 'app-modelosveiculos',
+    templateUrl: './modelosveiculos.component.html',
+    styleUrls: ['./modelosveiculos.component.css']
 })
 
-export class MarcasVeiculosComponent implements OnInit {
-    /*
-    constantes utilizadas pelo componente  
-    */
-    _marcas: Marcas[] = [];
-    _modelos: any = [];
-     marcaescolhida: string = "";
-    veiculoid: string = '3';
-    viewModelos: boolean = false;
-
-    /*
-    construtor que chama o servico passado pela funcao em marcasveiculos.service.ts 
-    */
-
+export class ModelosVeiculosComponent implements OnInit {
+  
+    id: [] = [];
+    
     constructor(private marcaService: MarcasVeiculosService) { }
 
     ngOnInit(): void {
-        this.marcas();
+        this.x()
 
     }
-    /*
-    retorna um array de marcas atraves de uma requisicao na api
-   */
-    marcas(): void {
-        this.marcaService.marcas().subscribe({
-            next: marcas => {
-                this._marcas = marcas;
-                console.log(marcas)
-            },
-            error: err => console.log('Error', err)
-        })
+    x():void{
+        console.log(this.id);
     }
     /*
     Funcao que retorna um array de modelos e a marca escolhida 
     * parametro id: recebe o id escolhido e atraves do id faz uma requisicao na api
     * parametro nome: atualiza a constante marcaescolhida conforme o nome da marca escolhida
-   */
+   
     modelos( id: string, nome: string ): void {
         
         this.veiculoid = id;
         this.marcaService.modelos( this.veiculoid ).subscribe({
             next: modelos => {
-                this._modelos = modelos.modelos;
+                this._modelos = modelos;
                 this.marcaescolhida = nome;
                 { this.viewModelos == false ? this.viewModelos = true : this.viewModelos = false };
-                console.log(modelos.modelos, nome, this.viewModelos)
+                console.log(modelos, nome, this.viewModelos)
                 
             },
             error: err => console.log('Error', err)
         })
     }
-
+*/
 }
