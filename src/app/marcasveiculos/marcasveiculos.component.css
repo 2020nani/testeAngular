@@ -48,24 +48,27 @@ span{
 }
 .titulo{
     margin-left: 2vw;
-    margin-top: 3vh;
     padding-top: 2vh ;
+    padding-bottom: 2vh;
     color: #5A5C69;
+    
+   
+}
+h1{
+    font-size: 2rem;
 }
 table{
     width: 94vw;
     padding-left: 2vw;
     
 }
-
+thead{
+    font-size: 1.8rem;
+}
 
 tbody{
     display: flex;
-    flex-direction: column;
-    
-    
-    
-   
+    flex-direction: column;  
 }
 
 tr{
@@ -73,7 +76,6 @@ tr{
     display: flex;;
     align-items: center;
     border-top: solid 1px #E3E6F0;
-   
     
 }
 td{
@@ -110,5 +112,6 @@ p{
     width: 10vw;
     color: #5A5C69;
     margin-top: 2vh;
+    font-size: 1.2rem;
     
 }
