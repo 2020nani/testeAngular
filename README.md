@@ -1,27 +1,36 @@
-# Pgabi
+# Navita
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
 
-## Development server
+Desenvolvido por Hernani Amancio de Almeida
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Executar projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para executar o projeto, sera necessario instalar os seguintes programas em seu computador:
 
-## Build
+.Nodejs 
+.angular
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Desenvolvimento
 
-## Running unit tests
+Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diretorio de sua preferencia com os seguintes comandos:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`cd "diretorio de sua preferencia"`
+`git clone https://github.com/2020nani/testeAngular.git`
+`cd testeAngular`
 
-## Running end-to-end tests
+Apos clonar o projeto em seu computador e necessario instalar as dependencias que o projeto utiliza com o seguinte comando:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+npm install
 
-## Further help
+Rode o programa em seu computador na porta 4200 com o seguinte comando
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+`ng serve -o`
+
+## Rodar testes end-to-end com cypress
+
+Rode o seguinte comando 
+`npx cypress open`
+
+

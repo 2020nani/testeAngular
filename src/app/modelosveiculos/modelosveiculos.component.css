@@ -1,0 +1,117 @@
+/*
+    Dados da pagina
+   * Nome : Navita
+   * Objetivo: Buscar modelos de veiculos da marca escolhida
+   * Desenvolvedor: Hernani Almeida
+   * data criacao: 29/11/2020
+   
+*/
+
+.container{
+    width: 98vw;
+    background-color: #F7F8FB;
+    margin-top: 2vh;
+    margin-left: 0.5vw;
+}
+.cardcontainer{
+    padding-bottom: 2vh;
+}
+.cardcontainermodelo{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.headcard{
+    width: 94vw;
+    height: 8vh;
+    border-radius: 5px;
+    background-color: #F8F9FC;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 0 5px 5px  rgba(58, 59, 69, .15);
+  
+}
+
+.card{
+    box-shadow: 5px 5px 5px 5px rgba(58, 59, 69, .15);
+    padding-top: 4vh;
+    width: 94vw;
+    margin-left: 2vw;
+    background-color: #ffffff;
+
+}
+
+span{
+    margin-left:1vw ;
+    color: blue;
+    font-size: 2rem;
+}
+.titulo{
+    margin-left: 2vw;
+    padding-top: 2vh ;
+    padding-bottom: 2vh;
+    color: #5A5C69;
+    
+   
+}
+h1{
+    font-size: 2rem;
+}
+table{
+    width: 94vw;
+    padding-left: 2vw;
+    
+}
+thead{
+    font-size: 1.8rem;
+}
+
+tbody{
+    display: flex;
+    flex-direction: column;  
+}
+
+tr{
+    width: 80vw;
+    display: flex;;
+    align-items: center;
+    border-top: solid 1px #E3E6F0;
+    
+}
+td{
+    
+    border-top: solid 1px #E3E6F0;
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+button{
+    color: #4E73DF;
+    border: none;
+    background-color:transparent;
+    margin-left: 40vw;
+    font-size: 1.2rem;
+}
+button:hover{
+    color:  #1CC88A;
+    border: none;
+}
+.modelo{
+    color: #4E73DF;
+    border: none;
+    background-color:transparent;
+    margin-left: 40vw;
+    font-size: 1.2rem;
+}
+.modelo:hover{
+    color:  #1CC88A;
+    border: none;
+}
+p{
+    width: 10vw;
+    color: #5A5C69;
+    margin-top: 2vh;
+    font-size: 1.2rem;
+    
+}
