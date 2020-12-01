@@ -8,8 +8,8 @@
 */
 
 import { Component, OnInit } from '@angular/core';
-import { Marcas } from './marcasveiculos';
-import { MarcasVeiculosService } from './marcasveiculos.service';
+import { Marcas } from './../shared/models/marcasveiculos';
+import { VeiculosService } from '../core/veiculos.service';
 
 /*
     
@@ -40,7 +40,7 @@ export class MarcasVeiculosComponent implements OnInit {
     construtor que chama o servico passado pela funcao em marcasveiculos.service.ts 
     */
 
-    constructor(private marcaService: MarcasVeiculosService) { }
+    constructor(private veiculosService: VeiculosService) { }
 
     ngOnInit(): void {
         this.marcas();
@@ -50,7 +50,7 @@ export class MarcasVeiculosComponent implements OnInit {
     retorna um array de marcas atraves de uma requisicao na api
    */
     marcas(): void {
-        this.marcaService.marcas().subscribe({
+        this.veiculosService.marcas().subscribe({
             next: marcas => {
                 this._marcas = marcas;
                 console.log(marcas)
@@ -59,23 +59,17 @@ export class MarcasVeiculosComponent implements OnInit {
         })
     }
     /*
-    Funcao que retorna um array de modelos e a marca escolhida 
-    * parametro id: recebe o id escolhido e atraves do id faz uma requisicao na api
+    Funcao que retorna codigo e nome dos modelos da marca escolhida 
+    * parametro id: recebe o codigo escolhido 
     * parametro nome: atualiza a constante marcaescolhida conforme o nome da marca escolhida
    */
-    modelos( id: string, nome: string ): void {
+    modeloescolhido( id: string, nome: string ): void {
         
         this.veiculoid = id;
-        this.marcaService.modelos( this.veiculoid ).subscribe({
-            next: modelos => {
-                this._modelos = modelos.modelos;
-                this.marcaescolhida = nome;
-                { this.viewModelos == false ? this.viewModelos = true : this.viewModelos = false };
-                console.log(modelos.modelos, nome, this.viewModelos)
+        this.marcaescolhida = nome;
+        { this.viewModelos == false ? this.viewModelos = true : this.viewModelos = false };
                 
-            },
-            error: err => console.log('Error', err)
-        })
+                
     }
 
 }

@@ -34,7 +34,7 @@
                             <!--
                              botao que aciona funcao modelos passando marcas.codigo como id e marcas.nome como marcaescolhida
                               -->
-                            <button (click)="modelos(marcas.codigo, marcas.nome)">ver modelos</button>
+                            <button (click)="modeloescolhido(marcas.codigo, marcas.nome)">ver modelos</button>
                         </td>
                     </tr>
                 </tbody>
@@ -74,31 +74,11 @@
     </div>
 
     <!--
-    container de modelos que so sera visualizado na pagina se a constante viewModelos for igual a true
+    componente de modelos que so sera visualizado na pagina se a constante viewModelos for igual a true
     -->
-
-    <div class="cardcontainermodelo" *ngIf="viewModelos === true">
-        <div class="headcard">
-            <span >Modelos</span>
-        </div>
-        <div class="card">
-            <table>
-                <thead>
-                    <tr>
-                        <p>Modelo</p>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let modelo of _modelos">
-
-                        <td>
-                            <p>{{ modelo.nome }}</p>
-
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    
+    <div  *ngIf="viewModelos === true">
+       <app-modelosveiculos [veiculoid] = 'veiculoid' [viewmodelos] = 'viewModelos'></app-modelosveiculos>
     </div>
 </div>
     

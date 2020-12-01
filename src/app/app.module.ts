@@ -9,6 +9,7 @@ import { MarcasVeiculosComponent } from './marcasveiculos/marcasveiculos.compone
 import { MaterialModule } from './shared/material/material.module';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { Error404Component } from './shared/components/Error404/error404.component';
+import { ModelosVeiculosComponent } from './modelosveiculos/modelosveiculos.component';
 
 
 
@@ -20,7 +21,8 @@ import { Error404Component } from './shared/components/Error404/error404.compone
     HeaderComponent,
     FooterComponent,
     MarcasVeiculosComponent,
-    Error404Component
+    Error404Component,
+    ModelosVeiculosComponent
    
     
     

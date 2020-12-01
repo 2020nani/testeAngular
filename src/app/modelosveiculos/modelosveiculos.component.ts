@@ -7,8 +7,8 @@
    
 */
 
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import { VeiculosService } from '../core/veiculos.service';
 
 /*
     
@@ -21,16 +21,38 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-modelosveiculos',
-    templateUrl: './marcasveiculos.component.html',
-    styleUrls: ['./marcasveiculos.component.css']
+    templateUrl: './modelosveiculos.component.html',
+    styleUrls: ['./modelosveiculos.component.css']
 })
 
 export class ModelosVeiculosComponent  {
     /*
     constantes utilizadas pelo componente  
     */
-    
-    _modelos: any = [];
+    @Input() viewmodelos: boolean = false;
+    _modelos: [] = [];
+    @Input() veiculoid: string = '';
   
+    constructor(private veiculosService: VeiculosService) { }
 
+    ngOnInit(): void {
+        this.modelos( );
+
+    }
+  
+    /*
+    Funcao que retorna um array de modelos e a marca escolhida 
+    * parametro id: recebe o id escolhido e atraves do id faz uma requisicao na api
+    * parametro nome: atualiza a constante marcaescolhida conforme o nome da marca escolhida
+   */
+    modelos( ): void {
+        this.veiculosService.modelos( this.veiculoid ).subscribe({
+            next: modelos => {
+                this._modelos = modelos.modelos;
+        
+            },
+            error: err => console.log('Error', err)
+        })
+        console.log(this.veiculoid)
+    }
 }
